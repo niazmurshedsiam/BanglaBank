@@ -12,7 +12,7 @@
   </head>
   <body>
    
-     <div class="login-area">
+     <div id="login-area">
         <h1 class="text-center">Welcome to Pioneer Bank</h1>
         <div class="submit-area">
             <h4>Login</h4>
@@ -20,10 +20,18 @@
             <br>
             <input type="password" class="form-control" placeholder="Password">
             <br> 
-            <button class="btn btn-success">Submit</button>
+            <button id="login" class="btn btn-success">Submit</button>
         </div>
 
+
      </div>
+     <script>
+        const loginBtn = document.getElementById("login");
+        loginBtn.addEventListener("click", function(){
+        const loginArea = document.getElementById("login-area");
+        loginArea.style.display = "none";
+        })
+     </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
